@@ -40,7 +40,8 @@ public class GroupSimilarTitles {
         String titles[] = {"duel", "dule", "speed", "spede", "deul", "cars"};
 
         List<List<String>> groupedTitles = groupTitles(titles);
-        String query = "spede";
+        System.out.println(groupedTitles);
+        String query = "cars";
 
         for(List<String> group : groupedTitles){
             if(group.contains(query))
